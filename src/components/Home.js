@@ -2,8 +2,9 @@ import Image from "../assets/soi-hero-banner-2024.7455aee66183ba225061.jpg";
 
 export default function Home() {
     return (
-        <div>
+        <div className="container">
             <img
+              className="img-feat"
               src={Image} 
               alt="One student holding a laptop having a conversation with an another student."/>
             <h1>Home</h1>
