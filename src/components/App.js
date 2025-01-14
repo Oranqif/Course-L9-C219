@@ -5,6 +5,8 @@ import Home from "./Home";
 import Diplomas from "./Diplomas";
 import Diploma from "./Diploma";
 import Module from "./Module";
+import Register from "./Register";
+import Confirmation from "./Confirmation";
 
 function App() {
     return (
@@ -19,6 +21,9 @@ function App() {
                     </Route>
                     <Route index element={<h2>Select a diploma from above</h2>} />
                 </Route>
+                <Route path="register" element={<Register />} />
+                <Route path="confirmed" element={<Confirmation />} />
+                <Route path="*" element={<h1 className="not found">Page Not Found</h1>} />
             </Routes>
 
             <footer className="container">
