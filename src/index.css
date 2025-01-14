@@ -18,6 +18,27 @@ h1 {
     margin: 0 0 1em 0;
 }
 
+h2 {
+    font-size: 1.85rem;
+    color: #858585;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: #525252;
+    margin: 0 0 0.25em;
+}
+
+h4+span {
+    display: block;
+    margin-bottom: 1.65em;
+}
+
 p {
     font-size: 1.125rem;
     line-height: 1.5;
@@ -67,13 +88,13 @@ nav a:hover,
 }
 
 .diplomas a:hover,
-a.category-active {
+a.module-active {
     color: #fff;
     background-color: #605e5e;
     border-radius: 3px;
 }
 
-.session a {
+.module a {
     display: block;
     color: rgb(56, 56, 56);
     text-decoration: none;
@@ -82,8 +103,8 @@ a.category-active {
     border-radius: 3px;
 }
 
-.session a:hover,
-a.session-active {
+.module a:hover,
+a.module-active {
     color: #489b9a;
 }
 
@@ -103,20 +124,20 @@ a.session-active {
     margin-bottom: 1.5em;
 }
 
-ul.session-list {
+ul.module-list {
     display: flex;
 }
 
-.session+.session {
+.module+.module {
     margin-left: 1.5em;
 }
 
-.session-name {
+.module-name {
     font-size: 1.125rem;
     font-weight: bold;
 }
 
-.session p {
+.module p {
     margin: 0;
 }
 

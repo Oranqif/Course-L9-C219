@@ -11,7 +11,12 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="diplomas" element={<Diplomas />} />
+                <Route path="diplomas" element={<Diplomas />}>
+                    <Route path=":dipId">
+                        <Route path=":moduleId" />
+                    </Route>
+                    <Route index element={<h3>Select a diploma from above</h3>}/>
+                </Route>
             </Routes>
 
             <footer className="container">
