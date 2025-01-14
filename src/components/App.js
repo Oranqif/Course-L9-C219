@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Diplomas from "./Diplomas";
+import Diploma from "./Diploma";
+import Module from "./Module";
 
 function App() {
     return (
@@ -12,10 +14,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="diplomas" element={<Diplomas />}>
-                    <Route path=":dipId">
-                        <Route path=":moduleId" />
+                    <Route path=":dipId" element={<Diploma />}>
+                        <Route path=":moduleId" element={<Module />} />
                     </Route>
-                    <Route index element={<h3>Select a diploma from above</h3>}/>
+                    <Route index element={<h2>Select a diploma from above</h2>} />
                 </Route>
             </Routes>
 

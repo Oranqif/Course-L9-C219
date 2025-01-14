@@ -77,7 +77,7 @@ nav a {
 
 nav a:hover,
 .nav-active {
-    color: #5dabaa;
+    color: #8ebd3c;
 }
 
 .diplomas a {
@@ -85,27 +85,35 @@ nav a:hover,
     color: #605e5e;
     text-decoration: none;
     padding: 0.25em 0.4em;
+    transition: 0.2s;
 }
 
 .diplomas a:hover,
 a.module-active {
-    color: #fff;
-    background-color: #605e5e;
-    border-radius: 3px;
+    background-color: #78b619;
+    color: white;
+    border-radius: 0.2em;
+    transition: 0.2s;
 }
 
 .module a {
     display: block;
     color: rgb(56, 56, 56);
     text-decoration: none;
-    border: 1px solid currentColor;
+    border: 0.12em solid currentColor;
     padding: 0.85em 1.125em;
-    border-radius: 3px;
+    border-radius: 0.2em;
+    transition: 0.2s;
 }
 
-.module a:hover,
+.module a:hover {
+    background-color: #78b619;
+    color: white;
+    transition: 0.2s;
+}
+
 a.module-active {
-    color: #489b9a;
+    color: white;
 }
 
 /* components * assets */

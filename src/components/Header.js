@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/rp-logo.a76b4d6a8e6239425057.png";
 
 export default function Header() {
+    const getClass = ({ isActive }) => isActive ? "nav-active" : null;
+
     return (
         <div>
             <header className="container">
@@ -15,9 +17,9 @@ export default function Header() {
                 </Link>
 
                 <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/diplomas">Diplomas</Link>
-                    <Link to="/register">Register</Link>
+                    <NavLink className={getClass} to="/">Home</NavLink>
+                    <NavLink className={getClass} to="/diplomas">Diplomas</NavLink>
+                    <NavLink className={getClass} to="/register">Register</NavLink>
                 </nav>
             </header>
         </div>

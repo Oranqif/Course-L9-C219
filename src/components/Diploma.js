@@ -7,7 +7,7 @@ export default function Diploma() {
 
     return (
         <div>
-            <h2>{diploma.name} Modules</h2>
+            <h2>{diploma.name} Diploma</h2>
             <ul className="module-list">
                 {diploma?.modules.map(module =>
                     <li className="module">
@@ -15,9 +15,7 @@ export default function Diploma() {
                             className={({ isActive }) => (isActive ? "module-active" : null)}
                             to={module.id}
                         >
-                            <p className="module-name">{module.name}</p>
-                            <p>{module.speaker.name} | {module.speaker.org}</p>
-                        </NavLink>
+                            <p className="module-name">{module.code} | {module.name}</p>                        </NavLink>
                     </li>
                 )}
             </ul>
